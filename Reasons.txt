@@ -1,0 +1,25 @@
+My Observations:
+    *I learned that Cookie based authentication would have been much better.
+    *I learned that bcrypt has salts built into the generated hashes to prevent rainbow table attacks.
+    *I learned that SQLite databases are the most convenient choice for developing small applications.
+    *I used Postman which is a great tool.I used it to dissect my project and used it to test an API's functionality. 
+
+Password Encryption:
+    *I used salts method because salts create unique passwords even in the instance of two users choosing the same passwords. 
+    *I think this is also safe since salts help us mitigate hash table attacks by forcing attackers to re-compute them using the salts for each user.
+
+Authentication:
+    *I used Token based system since most of the api call needs to be authenticated. 
+    *When a user is going to login, password is transmitted over SSL(client side hashing not employed) and then salted and hashed in the server itself.
+    *In return of this api call, a token is given to the user. For subsequent request by the user, till logout, this token will be present in all the api calls for them to succeed.
+
+User-roles/Ranking:
+    *Admins can see all the agents they have and other admins  if there are any.
+    *Agents can only see customers under them, they can see other agents and they can also see all the admins.
+    *Customers cannot see other users/Admins/Agents.
+
+Database:
+    *I used MongoDB, Since it provides high performance, high availability, and automatic scaling and i also feel it is simple to install and implement.
+
+Customer Loan Id:
+    *Each loan request is assigned with a unique id.

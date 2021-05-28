@@ -1,4 +1,3 @@
-# API_LOAN-MANAGEMENT-SYSTEM
 .I used Postman which is a great tool.I used it to dissect my   project and used it to test an API's functionality.
 .Backend is made with Python Flask Framework.
 .Webargs are used for argument parsing.
