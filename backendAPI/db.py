@@ -47,7 +47,8 @@ def find_and_modify(coll,expr,updt,wantNew):
 
 def get_db_client():
     if 'dbcl' not in g:
-        g.dbcl = mc('mongodb://mongodb:27017/')
+        g.dbcl = mc('mongodb://localhost:27017/userData?readPreference=primary&appname=MongoDB%20Compass&ssl=false')
+        
     return g.dbcl
 
 def get_db():

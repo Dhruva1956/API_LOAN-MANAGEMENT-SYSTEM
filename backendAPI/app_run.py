@@ -1,7 +1,7 @@
 from flask import Flask,jsonify
 from flask_restful import Api
 from webargs.flaskparser import parser,abort
-import routes
+from backendAPI import routes
 import db, constants, utils, initial_setup
 
 app = Flask(__name__)

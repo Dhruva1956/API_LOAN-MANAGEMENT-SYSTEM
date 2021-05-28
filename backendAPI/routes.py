@@ -1,8 +1,9 @@
 #admins can create other admins and agents. 
 #customers can create themeselves
+from flask_restful import Resource
 from webargs.flaskparser import use_args
-import utils,args,auth,db,initial_setup
-from constants import misc_webargs,roles
+from backendAPI import utils,args,auth,db,initial_setup
+from backendAPI.constants import misc_webargs,roles
 
 class Setup(Resource):
     def post(self):
